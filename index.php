@@ -23,14 +23,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; 
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'david.gmzherrera28@gmail.com'; 
-        $mail->Password   = 'vmzs qzqv zile uxcz'; 
+        $mail->Username   = 'Example@gmail.com'; 
+        $mail->Password   = '**** **** **** ****'; 
         $mail->SMTPSecure =PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
         // Destinatarios
-        $mail->setFrom('david.gmzherrera28@gmail.com', 'Usuario del Buzón de Quejas');
-        $mail->addAddress('david.gmzherrera28@gmail.com', 'David Gómez'); 
+        $mail->setFrom('Example@gmail.com', 'Usuario del Buzón de Quejas');
+        $mail->addAddress('Example@gmail.com', 'User'); 
 
         // Contenido del correo
         $mail->isHTML(true);
